@@ -1,0 +1,9 @@
+services:
+  node-app:
+    image: node
+    working_dir: /app
+    volumes:
+      - ./app:/app
+    ports:
+      - "3000:3000"
+    command: ["node", "app.js"]
